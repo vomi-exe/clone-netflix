@@ -23,27 +23,25 @@ const List = () => {
 
     }
 
-
-
-
+    const [num, setNum] = useState(-1);
 
     return <div className="list">
         <span className="listTitle">Continue to watch</span>
         <div className="wrapper">
             <ArrowBackIos style={{ display: !isMoved && "none" }} className="sliderArrow left" onClick={() => handleClick("left")} />
             <div className="container" ref={listRef}>
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
+                <ListItem index={0} setNum={setNum} num={num} />
+                <ListItem index={1} setNum={setNum} num={num} />
+                <ListItem index={2} setNum={setNum} num={num} />
+                <ListItem index={3} setNum={setNum} num={num} />
+                <ListItem index={4} setNum={setNum} num={num} />
+                <ListItem index={5} setNum={setNum} num={num} />
+                <ListItem index={6} setNum={setNum} num={num} />
+                <ListItem index={7} setNum={setNum} num={num} />
+                <ListItem index={8} setNum={setNum} num={num} />
+                <ListItem index={9} setNum={setNum} num={num} />
+                <ListItem index={10} setNum={setNum} num={num} />
+                <ListItem index={11} setNum={setNum} num={num} />
             </div>
             <ArrowForwardIos className="sliderArrow right" onClick={() => handleClick("right")} />
         </div>
