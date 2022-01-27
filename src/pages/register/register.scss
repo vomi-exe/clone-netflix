@@ -83,4 +83,18 @@
       }
     }
   }
+  .lastLine {
+    color: white;
+    position: relative;
+    top: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    .navigate {
+      margin: 0 10px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
 }

@@ -45,6 +45,11 @@ const Register = () => {
                 </form>
             )}
         </div>
+        <p className="lastLine">Use <div className="navigate">
+            "/home  /login  /watch"
+        </div>
+
+            to navigate through page</p>
     </div>;
 };
 
