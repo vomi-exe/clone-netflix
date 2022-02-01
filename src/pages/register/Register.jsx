@@ -1,5 +1,8 @@
 import { useState, useRef } from 'react';
 import "./register.scss";
+import Button from '@material-ui/core/Button';
+
+import { Link } from "react-router-dom";
 
 const Register = () => {
 
@@ -45,11 +48,23 @@ const Register = () => {
                 </form>
             )}
         </div>
-        <p className="lastLine">Use <div className="navigate">
-            "/home  /login  /watch"
-        </div>
+        <p className="lastLine">
+            <Link className="link" style={{ textDecoration: 'none' }} to="/home">
+                <Button className="btn-blw" variant="contained">Home</Button>
+            </Link>
+            <Link className="link" style={{ textDecoration: 'none' }} to="/watch">
+                <Button variant="contained" className="btn-blw" color="primary">
+                    Watch
+                </Button>
+            </Link>
+            <Link className="link" style={{ textDecoration: 'none' }} to="/login">
+                <Button variant="contained" className="btn-blw" color="secondary">
+                    Login
+                </Button>
+            </Link>
+        </p>
 
-            to navigate through page</p>
+
     </div>;
 };
 
